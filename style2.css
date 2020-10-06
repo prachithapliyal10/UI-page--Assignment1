@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 45px;
+}
+.header-nav {
+    display: none;
+}
+.icon {
+    align-items: center;
+    color: white;
+}
+
+/* Banner */
+.main-section {
+    height: 500px;
+    background: url("./background.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-sec {
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+    font-weight: bold;
+}
+.songs-button {
+    text-decoration: none;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+}
+dd {
+    margin: 5px 0;
+}
+dt {
+    margin-bottom: 10px;
+    color: #919496;
+}
+.lower-footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+@media screen and (min-width:1200px){
+    footer {
+        background: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-auto-rows: minmax(50px, auto);
+    }
+    .footer-logo {
+        grid-column: 1/2;
+        margin: 20px;
+    }
+    .info {
+        grid-column: 2/5;
+        display: flex;
+        justify-content: space-around;
+    }
+    .lower-footer {
+        display: flex;
+        grid-column: 1/7;
+        justify-content: space-between;
+        grid-row: 2/3;
+    }
+    .lower-footer ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+    .lower-footer ul li{
+       padding: 20px;
+    }
+    .intro{
+        padding: 40px;
+     }
+    .icon {
+        display: none;
+    }
+    .header-container ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    .header-nav a{
+        display: block;
+        padding: 10px;
+    }
+    .header-nav {
+        display: block;
+    }
+}
